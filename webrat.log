@@ -1,0 +1,78 @@
+# Logfile created on Sat Jan 08 14:43:27 +0100 2011 by logger.rb/22285
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /categories/new with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /categories/new with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /categories/new with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /categories/new with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /categories/new with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /categories/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /categories with {"commit"=>"Create Category", "category"=>{"name"=>"name 1"}, "utf8"=>"✓"} and HTTP headers {"HTTP_REFERER"=>"/categories/new"}
+REQUESTING PAGE: GET /categories with {} and HTTP headers {}
+REQUESTING PAGE: GET /categories/3 with {} and HTTP headers {"HTTP_REFERER"=>"/categories"}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /categories/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /categories with {"commit"=>"Create Category", "category"=>{"name"=>"name 1"}, "utf8"=>"✓"} and HTTP headers {"HTTP_REFERER"=>"/categories/new"}
+REQUESTING PAGE: GET /categories with {} and HTTP headers {}
+REQUESTING PAGE: GET /categories/3 with {} and HTTP headers {"HTTP_REFERER"=>"/categories"}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /categories/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /categories with {"commit"=>"Create Category", "category"=>{"name"=>"name 1"}, "utf8"=>"✓"} and HTTP headers {"HTTP_REFERER"=>"/categories/new"}
+REQUESTING PAGE: GET /categories with {} and HTTP headers {}
+REQUESTING PAGE: GET /categories/3 with {} and HTTP headers {"HTTP_REFERER"=>"/categories"}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"category_id 1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
+REQUESTING PAGE: GET /categories/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /categories with {"commit"=>"Create Category", "category"=>{"name"=>"name 1"}, "utf8"=>"✓"} and HTTP headers {"HTTP_REFERER"=>"/categories/new"}
+REQUESTING PAGE: GET /categories with {} and HTTP headers {}
+REQUESTING PAGE: GET /categories/3 with {} and HTTP headers {"HTTP_REFERER"=>"/categories"}
+REQUESTING PAGE: GET /links/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /links with {"commit"=>"Create Link", "utf8"=>"✓", "link"=>{"name"=>"name 1", "url"=>"url 1", "approved"=>"0", "category_id"=>"1"}} and HTTP headers {"HTTP_REFERER"=>"/links/new"}
+REQUESTING PAGE: GET /links with {} and HTTP headers {}
+REQUESTING PAGE: GET /links/3 with {} and HTTP headers {"HTTP_REFERER"=>"/links"}
