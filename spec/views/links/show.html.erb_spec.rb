@@ -8,6 +8,9 @@ describe "links/show.html.erb" do
       :url => "Url",
       :category_id => 1
     ))
+    @category = assign(:category, stub_model(Category,
+                                             :name => "Name"
+                                             ))
   end
 
   it "renders attributes in <p>" do

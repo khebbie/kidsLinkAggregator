@@ -19,7 +19,7 @@
     <td><%= link.category_id %></td>
     <td><%= link_to 'Show', link %></td>
     <td><%= link_to 'Edit', edit_link_path(link) %></td>
-    <td><%= link_to 'Destroy', link, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Destroy', link, :method => :delete, :class => 'delete'%></td>
   </tr>
 <% end %>
 </table>
@@ -27,3 +27,19 @@
 <br />
 
 <%= link_to 'New Link', new_link_path %>
+
+<script type="text/javascript">
+$('a.delete').click (function(){
+            if(confirm("Are you sure?")){
+                var row = $(this).closest("tr").get(0);
+                $.post(this.href, {_method:'delete'}, null, "script");
+                $(row).hide();
+                return false;
+            } else {
+                //they clicked no.
+                return false;
+            }
+
+    });
+
+</script>

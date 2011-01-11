@@ -4,6 +4,7 @@ describe LinksController do
 
   def mock_link(stubs={})
     @mock_link ||= mock_model(Link, stubs).as_null_object
+    @mock_category ||= mock_model(Category, stubs).as_null_object
   end
 
   describe "GET index" do
@@ -17,6 +18,7 @@ describe LinksController do
   describe "GET show" do
     it "assigns the requested link as @link" do
       Link.stub(:find).with("37") { mock_link }
+      Category.stub(:find).with(nil){ mock_category}
       get :show, :id => "37"
       assigns(:link).should be(mock_link)
     end
