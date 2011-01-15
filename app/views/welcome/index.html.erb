@@ -5,8 +5,12 @@
 </div>
 <script type="text/javascript">
 $(document).ready(function() {
-  $.getJSON('/approved.json', function(data) {
-    $('.result').html('<p><a href="' + data[0].link.url + '">' + data[0].link.name + '</a></p>');
+    $.getJSON('/approved.json', function(data) {
+$.each(data, function(index, value) { 
+  $('.result').append('<p><a href="' + value.link.url + '">' + value.link.name + '</a></p>');
+
+});
+
   });
     });
 </script>
