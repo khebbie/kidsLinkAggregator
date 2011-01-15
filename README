@@ -1,4 +1,5 @@
 Tool to aggregate links for kids
+Parent have to approve the link before it leaves the website
 
 Implemented in rails 3
 Using jquery
