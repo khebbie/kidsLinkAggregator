@@ -8,7 +8,7 @@ $(document).ready(function() {
     $.getJSON('/approved.json', function(data) {
       $('.result').append('<p><ul>');
       $.each(data, function(index, value) { 
-      $('.result').append('<li><a href="' + value.link.url + '">' + value.link.name + '</a></li>');
+      $('.result').append('<li><a href="' + value.link.url + '" target="_blank">' + value.link.name + '</a></li>');
       $('.result').append('</ul></p>');
 
 });
