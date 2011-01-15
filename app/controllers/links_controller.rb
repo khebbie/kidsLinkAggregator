@@ -9,6 +9,16 @@ class LinksController < ApplicationController
     end
   end
 
+  # GET /approved.xml
+  def approved
+    @links = Link.where("approved = ?", true)
+    respond_to do |format|
+      format.json  { render :json => @links }
+      format.xml  { render :xml => @links }
+    end
+  end
+
+
   # GET /links/1
   # GET /links/1.xml
   def show
