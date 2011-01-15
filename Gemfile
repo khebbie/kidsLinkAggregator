@@ -7,6 +7,8 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+gem "nifty-generators", :group => :development
+
 group :development, :test do
   gem "rspec-rails", "2.0.0"
   gem "cucumber-rails", "0.3.2"
