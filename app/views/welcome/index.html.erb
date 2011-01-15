@@ -1,2 +1,12 @@
 <h1>Velkommen til hjemmesiden for børnelinks</h1>
 <p>Her finder du alle de bedste links</p>
+<div class="result">
+
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+  $.getJSON('/approved.json', function(data) {
+    $('.result').html('<p><a href="' + data[0].link.url + '">' + data[0].link.name + '</a></p>');
+  });
+    });
+</script>
