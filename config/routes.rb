@@ -1,10 +1,15 @@
 KidsLinkAggregator::Application.routes.draw do
-  get "welcome/index"
+  #devise_for :users
+
+  #get "welcome/index"
 
   resources :categories
 
   resources :links
 
+
+
+ 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
