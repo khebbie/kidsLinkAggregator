@@ -1,4 +1,15 @@
 class LinksController < ApplicationController
+  before_filter :authenticate, :only => [:edit]
+
+  def authenticate
+     if !current_user || !current_user.admin?
+      flash[:notice] = "Not logged in"
+      
+      redirect_to :action => 'index'
+    end
+  end
+  
+  
   # GET /links
   # GET /links.xml
   def index
@@ -44,12 +55,7 @@ class LinksController < ApplicationController
 
   # GET /links/1/edit
   def edit
-    if !current_user || !current_user.admin?
-      flash[:notice] = "Not logged in"
-      
-      redirect_to :action => 'index'
-    end
-    @link = Link.find(params[:id])
+       @link = Link.find(params[:id])
   end
 
   # POST /links
