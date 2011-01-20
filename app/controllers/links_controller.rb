@@ -21,12 +21,11 @@ class LinksController < ApplicationController
     end
   end
 
-  # GET /approved.xml
+  # GET /approved.json
   def approved
     @links = Link.approved
     respond_to do |format|
       format.json  { render :json => @links }
-      format.xml  { render :xml => @links }
     end
   end
 
