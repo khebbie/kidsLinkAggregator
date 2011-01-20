@@ -6,7 +6,7 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'devise', '1.1.4'
+gem 'devise', '1.1.2'
 gem "nifty-generators", :group => :development
 
 group :development, :test do
