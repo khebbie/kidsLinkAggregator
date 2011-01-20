@@ -44,6 +44,9 @@ class LinksController < ApplicationController
 
   # GET /links/1/edit
   def edit
+    if !current_user || !current_user.admin?
+      redirect_to :root
+    end
     @link = Link.find(params[:id])
   end
 
