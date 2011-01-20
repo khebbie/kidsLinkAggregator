@@ -23,7 +23,7 @@ class LinksController < ApplicationController
 
   # GET /approved.xml
   def approved
-    @links = Link.where("approved = ?", true)
+    @links = Link.approved
     respond_to do |format|
       format.json  { render :json => @links }
       format.xml  { render :xml => @links }
