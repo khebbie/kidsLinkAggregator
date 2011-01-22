@@ -4,5 +4,6 @@ Parent have to approve the link before it leaves the website
 Implemented in rails 3
 Using jquery
 
-TODO:
-Add Devise to edit and approve links
+Please note that this is a learning project, so please do not consider
+it best practice.
+For instance I don't use RSpec and Cucumber - but I should
