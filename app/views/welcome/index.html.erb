@@ -4,21 +4,27 @@
 
 </div>
 <script type="text/javascript">
-$(document).ready(function() {
-    $.getJSON('/approved.json', function(data) {
-      var catIds  = [ 1, 2, 3, 4, 5 ];
-      $('.result').append('<p><ul>');
-      jQuery.each(catIds, function(i, catid) {
-        $.each(data, function(index, value) {
-         debugger; 
-          if(value.link.category_id == catid)
-            $('.result').append('<li><a href="' + value.link.url + '" target="_blank">' + value.link.name + '</a></li>');
-          $('.result').append('</ul></p>');
+  $(document).ready(function() {
+
+ $.getJSON('/categories.json', function(categories) {
+
+    $.getJSON('/approved.json', function(approvedLinks) {
+      jQuery.each(categories, function(i, catid) {
+        $('.result').append('<h3>' + catid.category.name + '</h3>');
+       
+        $('.result').append('<p><ul>');
+
+        $.each(approvedLinks, function(index, value) {
+         
+         if(value.link.category_id == catid.category.id)
+          
+          $('.result').append('<li><a href="' + value.link.url + '" target="_blank">' + value.link.name + '</a></li>');
+            
+        $('.result').append('</ul></p>');
+          });
+        });
+      }); 
       });
-    });
-
-
-  });
     });
 
 </script>
