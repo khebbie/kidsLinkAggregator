@@ -62,7 +62,8 @@ class LinksController < ApplicationController
   # POST /links.xml
   def create
     @link = Link.new(params[:link])
-
+    adminUser = User.find(1)
+    AdminMailer.new_link(adminUser, "test").deliver
     respond_to do |format|
       if @link.save
         format.html { redirect_to(@link, :notice => 'Link was successfully created.') }
