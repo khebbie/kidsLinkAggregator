@@ -13,7 +13,7 @@
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
-      <%= link_to 'Home', root_path%> | <%= link_to 'Links', links_path%> | <%= link_to 'Categories', categories_path%>  |<%= render 'devise/menu/login_items' %>
+      <%= link_to 'Hjem', root_path%> | <%= link_to 'Links', links_path%> | <%= link_to 'Kategorier', categories_path%>  |<%= render 'devise/menu/login_items' %>
       
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
