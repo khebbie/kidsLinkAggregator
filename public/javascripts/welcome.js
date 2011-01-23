@@ -1,8 +1,12 @@
 function populateLinks()
 {
+  var approvedLinks;
+
+ $.getJSON('/approved.json', function(app) {
+   approvedLinks = app;
+ });
  $.getJSON('/categories.json', function(categories) {
 
-    $.getJSON('/approved.json', function(approvedLinks) {
       jQuery.each(categories, function(i, catid) {
         $('.result').append('<h3>' + catid.category.name + '</h3>');
        
@@ -16,7 +20,6 @@ function populateLinks()
             
         $('.result').append('</ul></p>');
           });
-        });
       }); 
       });
 }

@@ -12,6 +12,6 @@ TODO
 Check for duplication when creating links
 Make sure links are valid and existing when created
 checkout jquery-rails gem
-move javascript from frontpage to js file
+DONE move javascript from frontpage to js file
 move authenticate method to common place to avoid duplication
 Checkout http://davidwparker.com/2010/03/09/api-in-rails-respond-to-and-respond-with/
