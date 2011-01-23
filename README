@@ -7,3 +7,11 @@ Using jquery
 Please note that this is a learning project, so please do not consider
 it best practice.
 For instance I don't use RSpec and Cucumber - but I should
+
+TODO
+Check for duplication when creating links
+Make sure links are valid and existing when created
+checkout jquery-rails gem
+move javascript from frontpage to js file
+move authenticate method to common place to avoid duplication
+Checkout http://davidwparker.com/2010/03/09/api-in-rails-respond-to-and-respond-with/
