@@ -13,10 +13,28 @@
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
-      <%= link_to 'Hjem', root_path%> | <%= link_to 'Links', links_path%> | <%= link_to 'Kategorier', categories_path%>  |<%= render 'devise/menu/login_items' %>
-      
+      <div id="header">
+        <h1>Kids LinkAggregator</h1>
+        <div id="menu">
+          <ul id="nav">
+            <li><%= link_to 'Hjem', root_path%></li>
+            <li><%= link_to 'Links', links_path%></li> 
+            <li><%= link_to 'Kategorier', categories_path%></li>
+            <li><%= render 'devise/menu/login_items' %></li>
+    </ul>
+    </div>
+  </div>
+  <div id ="content">
+    <div id="right">
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
     </div>
+    <div id="left">
+      <div class="box">
+      Her finder du alle de bedste links for børn
+      </div>
+    </div>
+  </div>
+  </div>
   </body>
 </html>
