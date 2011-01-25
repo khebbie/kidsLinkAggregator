@@ -1,3 +1,6 @@
+<%- content_for(:head) do -%>
+<%= javascript_include_tag "formDeleter.js" -%>
+<%- end -%>
 <h1>Listing links</h1>
 
 <table>
@@ -29,17 +32,7 @@
 <%= link_to 'New Link', new_link_path %>
 
 <script type="text/javascript">
-$('a.delete').click (function(){
-            if(confirm("Are you sure?")){
-                var row = $(this).closest("tr").get(0);
-                $.post(this.href, {_method:'delete'}, null, "script");
-                $(row).fadeOut();
-                return false;
-            } else {
-                //they clicked no.
-                return false;
-            }
-
-    });
-
+attachDelete();
 </script>
+
+
