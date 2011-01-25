@@ -21,8 +21,9 @@
 </table>
 
 <br />
+ <% if user_signed_in? %>
 <%= link_to 'New Category', new_category_path %>
-
+<% end %>
 <script type="text/javascript">
 attachDelete();
 </script>
