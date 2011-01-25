@@ -14,7 +14,7 @@
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
       <div id="header">
-        <h1>Kids LinkAggregator</h1>
+        <h1>Kids Link Aggregator</h1>
         <div id="menu">
           <ul id="nav">
             <li><%= link_to 'Hjem', root_path%></li>
@@ -36,8 +36,8 @@
       Her finder du alle de bedste links for børn og barnlige sjæle
     </div>
     <div class="box">
-      Vidste du at du selv kan tilføje links til siden?</br>
-      Klik på "Opret nyt link" på forsiden. Herefter skal en administrator godkende linket
+      <p> Vidste du at du selv kan tilføje links til siden?</p>
+      <p> Klik på "<%= link_to "Opret nyt link", new_link_path %>" på forsiden. Herefter skal en administrator godkende linket</p>
     </div>
     <div class="box">
       Denne side er lavet af Klaus Hebsgaard</br>
