@@ -17,15 +17,14 @@ function populateLinks()
 {
   var approvedLinks;
   //http://stackoverflow.com/questions/2465446/getjson-each-returns-undefined
-$.ajaxSetup({async:false});
  $.getJSON('/approved.json', function(app) {
    approvedLinks = app;
- });
 
  $.getJSON('/categories.json', function(categories) {
     jQuery.each(categories, function(i, catid) {
       populateCategory(catid, approvedLinks);
     }); 
+  });
   });
 }
 
