@@ -16,7 +16,7 @@ function populateCategory(catid, approvedLinks)
 function populateLinks()
 {
   var approvedLinks;
-
+$.ajaxSetup({async:false});
  $.getJSON('/approved.json', function(app) {
    approvedLinks = app;
  });
