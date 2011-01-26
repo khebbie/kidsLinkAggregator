@@ -9,11 +9,14 @@ it best practice.
 For instance I don't use RSpec and Cucumber - but I should
 
 TODO
-Check for duplication when creating links
-Make sure links are valid and existing when created
+DONE Make sure links are valid 
 checkout jquery-rails gem
 DONE move javascript from frontpage to js file
 move authenticate method to common place to avoid duplication
 Checkout http://davidwparker.com/2010/03/09/api-in-rails-respond-to-and-respond-with/
+
+Nice-To-Have
 Send mail to admin when new link is created
 Maybe fetch favicon and show
+Check for duplication when creating links
+

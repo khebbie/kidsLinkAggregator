@@ -16,6 +16,7 @@ function populateCategory(catid, approvedLinks)
 function populateLinks()
 {
   var approvedLinks;
+  //http://stackoverflow.com/questions/2465446/getjson-each-returns-undefined
 $.ajaxSetup({async:false});
  $.getJSON('/approved.json', function(app) {
    approvedLinks = app;
