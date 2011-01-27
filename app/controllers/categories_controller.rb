@@ -2,17 +2,6 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.xml
  before_filter :authenticate, :only => [:show, :edit, :update, :new, :destroy]
-
- def authenticate
-     if !user_signed_in? || !current_user.admin?
-      flash[:notice] = "Not logged in"
-      
-      redirect_to :action => 'index'
-    end
-  end
-  
-
- 
  
   def index
     @categories = Category.all

@@ -1,16 +1,7 @@
 class LinksController < ApplicationController
   before_filter :authenticate, :only => [:edit, :update, :destroy]
 
-  def authenticate
-     if !user_signed_in? || !current_user.admin?
-      flash[:notice] = "Not logged in"
-      
-      redirect_to :action => 'index'
-    end
-  end
-  
-  
-  # GET /links
+   # GET /links
   # GET /links.xml
   def index
     @links = Link.all
