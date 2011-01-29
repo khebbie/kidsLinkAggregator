@@ -1,28 +1,31 @@
-function populateCategory(catid, approvedLinks) {
-    $('.result').append('<h3>' + catid.category.name + '</h3>');
-    $('.result').append('<p><ul>');
+function Welcome() {
 
-    $.each(approvedLinks, function (index, value) {
-        if (value.link.category_id === catid.category.id) {
-            $('.result').append('<li><a href="' + value.link.url + '" target="_blank">' + value.link.name + '</a></li>');
-        }
-        $('.result').append('</ul></p>');
-    });
+    function populateCategory(catid, approvedLinks) {
+        $('.result').append('<h3>' + catid.category.name + '</h3>');
+        $('.result').append('<p><ul>');
 
-}
-
-function populateLinks() {
-    var approvedLinks;
-    //http://stackoverflow.com/questions/2465446/getjson-each-returns-undefined
-    $.getJSON('/approved.json', function (app) {
-        approvedLinks = app;
-
-        $.getJSON('/categories.json', function (categories) {
-            jQuery.each(categories, function (i, catid) {
-                populateCategory(catid, approvedLinks);
-            }); 
+        $.each(approvedLinks, function (index, value) {
+            if (value.link.category_id === catid.category.id) {
+                $('.result').append('<li><a href="' + value.link.url + '" target="_blank">' + value.link.name + '</a></li>');
+            }
+            $('.result').append('</ul></p>');
         });
-    });
-}
 
+    }
+
+    var approvedLinks;
+
+    this.populateLinks =  function () {
+        //http://stackoverflow.com/questions/2465446/getjson-each-returns-undefined
+        $.getJSON('/approved.json', function (app) {
+            approvedLinks = app;
+
+            $.getJSON('/categories.json', function (categories) {
+                jQuery.each(categories, function (i, catid) {
+                    populateCategory(catid, approvedLinks);
+                }); 
+            });
+        });
+    };
+}
 
