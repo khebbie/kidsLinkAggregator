@@ -1,4 +1,4 @@
-function Welcome() {
+var Welcome = function () {
 
     function populateCategory(catid, approvedLinks) {
         $('.result').append('<h3>' + catid.category.name + '</h3>');
@@ -14,8 +14,8 @@ function Welcome() {
     }
 
     var approvedLinks;
-
-    this.populateLinks =  function () {
+return {
+    populateLinks:   function () {
         //http://stackoverflow.com/questions/2465446/getjson-each-returns-undefined
         $.getJSON('/approved.json', function (app) {
             approvedLinks = app;
@@ -26,6 +26,7 @@ function Welcome() {
                 }); 
             });
         });
-    };
+    }
+};
 }
 
